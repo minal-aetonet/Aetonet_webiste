@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171916'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='700' fill='%23b8f23d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+    <meta name="description" content="Practical field notes on software, design, and running a delivery team from Aetonet." />
+    <title>Insights | Aetonet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="includes.js" defer></script>
+  </head>
+  <body class="insights-page">
+    <div data-include="header.html"></div>
+    <main id="home">
+      <section class="insights-hero">
+        <div class="insights-hero-inner">
+          <h1>Ideas, notes, and field notes<br /><span>from the build.</span></h1>
+          <p>Practical writing on software, design, and running a delivery team—what worked, what did not, and what we would do differently.</p>
+          <div class="insights-stats">
+            <div><strong>3</strong><span>Articles</span></div>
+            <div><strong>3</strong><span>Topics</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="insights-library section" aria-label="Browse insights">
+        <div class="insights-tools">
+          <label class="insights-search">
+            <span>SEARCH</span>
+            <input type="search" id="insight-search" placeholder="Search articles" autocomplete="off" />
+            <b aria-hidden="true">⌕</b>
+          </label>
+          <div class="insights-filters" role="group" aria-label="Filter by topic">
+            <button class="insight-filter is-selected" type="button" data-filter="all" aria-pressed="true">All <span>3</span></button>
+            <button class="insight-filter" type="button" data-filter="artificial-intelligence" aria-pressed="false">Artificial Intelligence <span>1</span></button>
+            <button class="insight-filter" type="button" data-filter="cloud-infrastructure" aria-pressed="false">Cloud &amp; Infrastructure <span>1</span></button>
+            <button class="insight-filter" type="button" data-filter="product-strategy" aria-pressed="false">Product Strategy <span>1</span></button>
+          </div>
+        </div>
+        <!-- Each card is one article. To add an article:
+             1. Copy a card and change its link (?article=your-slug), topic, title, summary and date.
+             2. Put the article text in articles/your-slug.html (copy an existing file as a starting point).
+             For an image, add <img class="insight-card-media" src="..." alt="..." /> as the first
+             line inside the card; the article page uses it as its cover. No image = no cover. -->
+        <div class="insights-library-grid" id="insight-results" aria-live="polite">
+          <a class="insight-library-card" href="insight-single.html?article=cloud-migration-strategy" data-category="cloud-infrastructure">
+            <div class="insight-card-body">
+              <h2>Choosing a cloud migration strategy that actually saves money</h2>
+              <p class="insight-card-summary">Why lift-and-shift rarely delivers the savings teams expect, and a phased approach that matches each workload to the right migration pattern.</p>
+              <p class="insight-card-meta"><time datetime="2026-09-17">September 17, 2026</time> · <span>7 min read</span></p>
+              <div class="insight-card-foot"><span class="insight-topic">Cloud &amp; Infrastructure</span><b aria-hidden="true">↗</b></div>
+            </div>
+          </a>
+          <a class="insight-library-card" href="insight-single.html?article=ai-in-business-operations" data-category="artificial-intelligence">
+            <div class="insight-card-body">
+              <h2>The future of AI in practical business operations</h2>
+              <p class="insight-card-summary">A realistic framework for identifying useful AI opportunities while managing privacy, quality, operating cost, and human review.</p>
+              <p class="insight-card-meta"><time datetime="2026-09-17">September 17, 2026</time> · <span>8 min read</span></p>
+              <div class="insight-card-foot"><span class="insight-topic">Artificial Intelligence</span><b aria-hidden="true">↗</b></div>
+            </div>
+          </a>
+          <a class="insight-library-card" href="insight-single.html?article=roadmap-data-foundation" data-category="product-strategy">
+            <div class="insight-card-body">
+              <h2>Why your product roadmap needs a data foundation</h2>
+              <p class="insight-card-summary">A roadmap of guesses looks the same as a roadmap of hypotheses—until you check which one is actually grounded in a metric.</p>
+              <p class="insight-card-meta"><time datetime="2026-09-17">September 17, 2026</time> · <span>6 min read</span></p>
+              <div class="insight-card-foot"><span class="insight-topic">Product Strategy</span><b aria-hidden="true">↗</b></div>
+            </div>
+          </a>
+        </div>
+        <p class="insights-empty" hidden>No articles match that search. Try a different phrase or topic.</p>
+      </section>
+    </main>
+    <div data-include="footer.html"></div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171916'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='700' fill='%23b8f23d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+    <meta name="description" content="Tell Aetonet about your project. We reply personally, usually within one business day." />
+    <title>Contact | Aetonet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="includes.js" defer></script>
+  </head>
+  <body class="contact-page">
+    <div data-include="header.html"></div>
+    <main id="home">
+      <section class="contact-hero">
+        <div class="contact-hero-inner">
+          <span class="section-kicker"><i></i> CONTACT</span>
+          <h1>Let's talk about<br /><span>your project.</span></h1>
+          <p>Tell us the business goal, current process, users, timeline, and budget expectations. We reply personally, usually within one business day.</p>
+          <div class="contact-facts">
+            <a href="mailto:minal.aetonet@gmail.com"><span>EMAIL</span><strong>minal.aetonet@gmail.com</strong></a>
+            <a href="tel:+15550100100"><span>PHONE</span><strong>+1 (555) 010-0100</strong></a>
+            <div><span>OFFICE</span><strong>Remote-first, working with clients worldwide</strong></div>
+            <div><span>RESPONSE TIME</span><strong>Within one business day</strong></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form-section section">
+        <div class="contact-form-intro">
+          <span class="section-kicker"><i></i> START A CONVERSATION</span>
+          <h2>Tell us about<br /><span>your project.</span></h2>
+          <p>A few details will help us make our first reply useful.</p>
+        </div>
+        <!-- Submissions are emailed to the address at the end of data-endpoint (via formsubmit.co).
+             The first submission sends a one-time activation email to that address. -->
+        <form class="project-form" id="project-form" data-endpoint="https://formsubmit.co/ajax/minal.aetonet@gmail.com">
+          <!-- Spam trap: hidden from people, filled in by bots. -->
+          <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-field">
+            <label for="project-name">Name <b>*</b></label>
+            <input id="project-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="project-email">Email <b>*</b></label>
+            <input id="project-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="project-company">Company</label>
+            <input id="project-company" name="company" type="text" autocomplete="organization" />
+          </div>
+          <div class="form-field">
+            <label for="project-type">Project type</label>
+            <select id="project-type" name="projectType">
+              <option value="">Select one</option>
+              <option>Website</option>
+              <option>Custom Software</option>
+              <option>Mobile App</option>
+              <option>Marketing / SEO</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="project-budget">Budget</label>
+            <select id="project-budget" name="budget">
+              <option>Not sure yet</option>
+              <option>Under $5k</option>
+              <option>$5k - $15k</option>
+              <option>$15k - $50k</option>
+              <option>$50k+</option>
+            </select>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="project-timeline">Timeline</label>
+            <select id="project-timeline" name="timeline">
+              <option>Flexible</option>
+              <option>ASAP</option>
+              <option>1-3 months</option>
+              <option>3-6 months</option>
+            </select>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="project-message">Message <b>*</b></label>
+            <textarea id="project-message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="form-submit form-field-wide">
+            <button class="contact-button" type="submit">Send message <span>↗</span></button>
+            <p id="form-note" aria-live="polite">We reply personally, usually within one business day.</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <div data-include="footer.html"></div>
+  </body>
+</html>

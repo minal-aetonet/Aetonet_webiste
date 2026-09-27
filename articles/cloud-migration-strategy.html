@@ -1,0 +1,27 @@
+<!-- Article body for insight-single.html?article=cloud-migration-strategy.
+     Each <h2> needs an id; the page builds its "on this page" links from them. -->
+<p class="article-lead">Most cloud migrations are sold as a lift-and-shift exercise: move the servers, keep the architecture, collect the savings. In practice, teams that migrate this way often end up paying more than they did on-premises, because the cost model of the cloud punishes idle capacity and rewards workloads that are actually designed for it.</p>
+
+<h2 id="match-the-pattern">Match the migration pattern to the workload</h2>
+<p>Not every system deserves the same treatment. A batch job that runs nightly is a poor candidate for a rehost; it’s a strong candidate for a fully managed, pay-per-use service. A latency-sensitive transactional system may need a careful refactor, not a rehost at all.</p>
+
+<blockquote>
+  <p>Lift-and-shift buys you a data center address change. It rarely buys you the economics people expect from “the cloud.”</p>
+</blockquote>
+
+<h2 id="phased-approach">A phased approach that limits risk</h2>
+<ol>
+  <li><strong>Inventory and classify.</strong> Group systems by criticality, data sensitivity, and how well they tolerate re-architecture.</li>
+  <li><strong>Migrate the low-risk tier first.</strong> Internal tools and stateless services validate your pipeline before anything customer-facing moves.</li>
+  <li><strong>Right-size before automating.</strong> Automating a wasteful configuration just makes the waste run faster.</li>
+  <li><strong>Set a cost ceiling per workload.</strong> Track spend per system from day one, not after the first surprising invoice.</li>
+</ol>
+
+<h2 id="risks">Important risks to manage</h2>
+<ul>
+  <li>Data egress costs that were never modeled during planning</li>
+  <li>Compliance and residency requirements that differ by region</li>
+  <li>Team skill gaps that turn “managed services” into unmanaged ones</li>
+  <li>Vendor lock-in from proprietary managed offerings</li>
+</ul>
+<p>The organizations that come out ahead treat migration as a sequence of small, reversible decisions rather than one large bet—each phase funded by the savings or capability gains of the last.</p>

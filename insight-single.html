@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171916'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='700' fill='%23b8f23d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+    <meta name="description" content="Practical writing on software, design, and running a delivery team from Aetonet." />
+    <title>Insights | Aetonet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="includes.js" defer></script>
+  </head>
+  <body class="insight-single-page">
+    <div data-include="header.html"></div>
+    <main id="home">
+      <section class="article-hero is-loading">
+        <div class="article-hero-inner">
+          <a class="article-back" href="insights.html"><b aria-hidden="true">←</b> All insights</a>
+          <!-- Everything below is filled in from the article's card on insights.html. -->
+          <h1></h1>
+          <p></p>
+          <dl class="article-meta">
+            <div><dt>Topic</dt><dd class="article-topic"></dd></div>
+            <div><dt>Author</dt><dd>Aetonet</dd></div>
+            <div><dt>Published</dt><dd class="article-date"></dd></div>
+            <div><dt>Reading time</dt><dd class="article-read-time"></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Shown only when the article's card on insights.html has an image. -->
+      <figure class="article-cover" hidden>
+        <img src="" alt="" />
+      </figure>
+
+      <section class="article-layout section">
+        <aside class="article-aside">
+          <!-- Links are built from the article's section headings. -->
+          <nav class="article-toc" aria-label="On this page"></nav>
+          <button class="article-copy-link" type="button">Copy link</button>
+        </aside>
+
+        <article class="article-content">
+          <!-- Loaded from articles/<slug>.html. -->
+          <div class="article-body"></div>
+
+          <div class="article-author">
+            <span class="article-author-avatar" aria-hidden="true">A</span>
+            <div><b>Aetonet</b><span>Technology and digital growth studio</span></div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Filled with other articles from insights.html. -->
+      <section class="article-related section" aria-labelledby="related-heading" hidden>
+        <h2 id="related-heading">Related articles.</h2>
+        <div class="insights-library-grid"></div>
+      </section>
+
+      <section class="services-final-cta">
+        <div><h2>Define the right solution<br /><span>before the wrong build.</span></h2><p>Tell us the business goal, current process, users, timeline, and budget expectations.</p><a class="contact-button" href="contact.html">Start the conversation <span>↗</span></a></div>
+      </section>
+    </main>
+    <div data-include="footer.html"></div>
+  </body>
+</html>

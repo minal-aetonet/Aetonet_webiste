@@ -1,0 +1,30 @@
+<!-- Article body for insight-single.html?article=ai-in-business-operations.
+     Each <h2> needs an id; the page builds its "on this page" links from them. -->
+<p class="article-lead">AI is moving out of experimental side projects and into the daily operations of real organizations. It now shows up in search, summarization, classification, customer service, and content drafting—often quietly, as a feature inside a workflow rather than a product on its own. That shift changes the question worth asking. It’s no longer “what can this model do?” but “which of our decisions and workflows would actually get better with it?”</p>
+
+<h2 id="start-with-the-workflow">Start with the workflow, not the model</h2>
+<p>It’s tempting to start with a model and look for a place to use it. That order produces demos, not durable value. A better starting point is the workflow itself: does it have a clear user, a repeatable input, a measurable output, a known review process, and an acceptable margin for error? If any of those are missing, the model is the least of your problems.</p>
+
+<blockquote>
+  <p>AI creates business value when it improves a real decision or workflow—not simply when it produces an impressive demonstration.</p>
+</blockquote>
+
+<h2 id="implementation-approach">A practical implementation approach</h2>
+<ol>
+  <li><strong>Define the task precisely.</strong> Write down the exact input, the exact output, and what “good” looks like before you touch a model.</li>
+  <li><strong>Decide where human review belongs.</strong> Some outputs can ship unreviewed; most, early on, shouldn’t. Be explicit about which is which.</li>
+  <li><strong>Prepare data and permissions.</strong> Confirm what the system is allowed to see, store, and retain—before it’s live, not after an incident.</li>
+  <li><strong>Measure full operating cost.</strong> Include inference cost, review time, and the cost of occasional failure, not just the API bill.</li>
+</ol>
+
+<h2 id="risks">Important risks to manage</h2>
+<ul>
+  <li>Incorrect or unsupported output presented with false confidence</li>
+  <li>Confidential information exposure through prompts or logs</li>
+  <li>Bias or inconsistency across similar cases</li>
+  <li>Unclear ownership of decisions the system influences</li>
+  <li>Dependency on a third-party provider’s uptime and pricing</li>
+</ul>
+
+<h2 id="choose-a-pilot">Choose one useful, reviewable pilot</h2>
+<p>The organizations that get the most out of AI don’t start with a strategy document—they start with one workflow, reviewed closely, with a clear owner and a defined success measure. Get that right, in public, and the next ten opportunities become much easier to evaluate.</p>
