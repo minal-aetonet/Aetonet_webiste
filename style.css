@@ -127,7 +127,10 @@ body.header-hidden .site-header { transform: translateY(-110%); }
   font-weight: 700;
   text-decoration: none;
 }
-.site-header .wordmark img { display: block; width: clamp(116px, 14vw, 168px); height: auto; }
+.site-header .wordmark img {    display: block;
+    width: 92px;
+    height: auto;
+    margin-left: 47px; }
 
 .desktop-nav {
   display: flex;
